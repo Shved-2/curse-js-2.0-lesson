@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+body{
+    background: url('https://kartin.papik.pro/uploads/posts/2023-07/1688360466_kartin-papik-pro-p-kartinki-leto-krasivie-priroda-26.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.content{
+    margin: 100px auto;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 10px;
+   box-shadow: 0px 0px 10px black;
+   padding: 10px;
+   position: relative;
+
+}
+.sity{
+    margin: 10px 0 0 0;
+    font-size: 40px;
+    text-align: center;
+}
+.main{
+    margin: 30px 0 0 0;
+    display: flex;
+}
+.temp{
+    margin: 0;
+    width: 50%;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 30px;
+}
+.img{
+    margin: 0;
+    width: 50%;
+    font-size: 50px;
+    text-align: center;
+}
+.img-icon{
+    width: 150px;
+}
+.additionally{
+    /* background-color: rgba(255, 255, 255, 0.562); */
+    display: flex;
+    margin-top: -10px;
+    position: relative;
+    bottom: -30px;
+   
+}
+
+.des{
+    display: flex;
+} 
+ .number{
+    font-size: 40px;
+    margin: 10px 10px 10px 40px;
+   
+}
+.wind{
+    width: 50%;
+    padding: 20px ;
+}
+.humidity{
+    width: 50%;
+    padding: 20px;
+}
+.wind .title, .humidity .title{
+    text-align: center;
+    font-style: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.unit{
+    padding-top: 5px;
+}
+.napr{
+    margin:5px 0 0  0;
+    font-size: 15px;
+}
+
