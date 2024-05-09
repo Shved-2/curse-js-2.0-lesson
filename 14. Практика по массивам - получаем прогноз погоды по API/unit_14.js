@@ -1,12 +1,24 @@
-// let key = e0c33d50f06241584f10fb4115753fa5;
+let keyToken = 'e0c33d50f06241584f10fb4115753fa5';
 let httpicon = 'http://openweathermap.org/img/w/';
 
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 // https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+let sitys = [
+  'London',
+  'Perm',
+  'Moscow',
+  'Kyiv',
+  'Paris',
+  'Beijing',
+  'Tokio',
+  'Los Angeles',
+  'Madrid',
+  'Roma',
+];
+let num = Math.round(Math.random() * (sitys.length - 1));
+let sity = sitys[num];
 
-fetch(
-  `https://api.openweathermap.org/data/2.5/weather?q=Perm&appid=e0c33d50f06241584f10fb4115753fa5`,
-)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${sity}&appid=${keyToken}`)
   .then((response) => {
     return response.json();
   })
@@ -19,7 +31,7 @@ fetch(
       // .setAttribute('src', `http://openweathermap.org/img/w/${data.weather[0].icon}.png`);
       .setAttribute('src', `image/${data.weather[0].icon}.svg`);
 
-    document.querySelector('.number1').innerHTML = data.wind.speed;
+    document.querySelector('.number1').innerHTML = Math.round(data.wind.speed);
     document.querySelector('.number2').innerHTML = data.main.humidity;
     let napr = document.querySelector('.napr');
     if (
