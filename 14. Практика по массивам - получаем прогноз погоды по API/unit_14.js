@@ -1,4 +1,4 @@
-let keyToken = 'e0c33d50f06241584f10fb4115753fa5';
+let keyToken = ''; //укажите свой токен
 let httpicon = 'http://openweathermap.org/img/w/';
 
 // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
