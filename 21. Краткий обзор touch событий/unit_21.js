@@ -182,4 +182,19 @@ function resetFunction() {
   let imageHref = images[count].getAttribute('src');
   imageMax.setAttribute('src', imageHref);
 }
+
+//---------------------------------
+//работа с иконками напрямую через нажатие на них
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener('touchstart', () => {
+    for (let k = 0; k < images.length; k++) {
+      images[k].classList.remove('active-img');
+    }
+
+    count = i;
+    images[i].classList.add('active-img');
+    let imageHref = images[i].getAttribute('src');
+    imageMax.setAttribute('src', imageHref);
+  });
+}
 // ваше событие здесь!!!
